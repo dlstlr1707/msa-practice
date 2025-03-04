@@ -1,10 +1,10 @@
-package com.example.practicenum2;
+package com.example.feigndata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PracticeNum2ApplicationTests {
+class FeignDataApplicationTests {
 
     @Test
     void contextLoads() {
