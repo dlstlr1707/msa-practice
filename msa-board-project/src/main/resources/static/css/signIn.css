@@ -79,12 +79,24 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
+.oauth-btn{
+    width: 350px;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
 
-.oauth-btn >button{
-    width: 40px;
-    height: 40px;
-    background-image: url(/static/naver.png);
-    background-position: 0px 0px;
-    background-color: transparent;
+.oauth-btn a{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.oauth-btn a:hover{
+    text-decoration: none;
 }

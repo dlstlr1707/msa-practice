@@ -34,7 +34,8 @@ public class WebSecurityConfig {
                         "/static/**",
                         "/css/**",
                         "/js/**",
-                        "/favicon.ico"
+                        "/favicon.ico",
+                        "/static/naver.png"
                 ); // 정적 리소스 경로 무시
     }
 
@@ -51,7 +52,7 @@ public class WebSecurityConfig {
                                 .requestMatchers(
                                         new AntPathRequestMatcher("/", HttpMethod.GET.name()),
                                         new AntPathRequestMatcher("/favicon.ico", HttpMethod.GET.name()),
-                                        new AntPathRequestMatcher("/static/naver.png", HttpMethod.GET.name()),
+                                        new AntPathRequestMatcher("/static/*", HttpMethod.GET.name()),
                                         new AntPathRequestMatcher("/oauth/naver", HttpMethod.GET.name()),
                                         new AntPathRequestMatcher("/oauth/naver/*", HttpMethod.GET.name()),
                                         new AntPathRequestMatcher("/oauth/token", HttpMethod.GET.name()),
